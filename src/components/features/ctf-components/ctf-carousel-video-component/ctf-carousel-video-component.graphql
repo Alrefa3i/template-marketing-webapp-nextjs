@@ -1,0 +1,14 @@
+query CtfCarouselVideoComponent($id: String!, $locale: String, $preview: Boolean) {
+  carouselVideoComponent(id: $id, locale: $locale, preview: $preview) {
+    sys {
+      id
+    }
+    videosCollection {
+      items {
+        url
+        title
+        description
+      }
+    }
+  }
+}

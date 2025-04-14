@@ -1,12 +1,15 @@
 import * as Types from '../../../../../lib/__generated/graphql.types';
 
-import { ComponentReferenceFields_ComponentCta_Fragment, ComponentReferenceFields_ComponentDuplex_Fragment, ComponentReferenceFields_ComponentHeroBanner_Fragment, ComponentReferenceFields_ComponentInfoBlock_Fragment, ComponentReferenceFields_ComponentProductTable_Fragment, ComponentReferenceFields_ComponentQuote_Fragment, ComponentReferenceFields_ComponentTextBlock_Fragment, ComponentReferenceFields_FooterMenu_Fragment, ComponentReferenceFields_MenuGroup_Fragment, ComponentReferenceFields_NavigationMenu_Fragment, ComponentReferenceFields_Page_Fragment, ComponentReferenceFields_Seo_Fragment, ComponentReferenceFields_TopicBusinessInfo_Fragment, ComponentReferenceFields_TopicPerson_Fragment, ComponentReferenceFields_TopicProduct_Fragment, ComponentReferenceFields_TopicProductFeature_Fragment } from '../../../../../lib/shared-fragments/__generated/ctf-componentMap.generated';
+import { ComponentReferenceFields_CarouselVideoComponent_Fragment, ComponentReferenceFields_ComponentCta_Fragment, ComponentReferenceFields_ComponentDuplex_Fragment, ComponentReferenceFields_ComponentHeroBanner_Fragment, ComponentReferenceFields_ComponentInfoBlock_Fragment, ComponentReferenceFields_ComponentProductTable_Fragment, ComponentReferenceFields_ComponentQuote_Fragment, ComponentReferenceFields_ComponentTextBlock_Fragment, ComponentReferenceFields_FooterMenu_Fragment, ComponentReferenceFields_HeroSlideDownBannar_Fragment, ComponentReferenceFields_MenuGroup_Fragment, ComponentReferenceFields_NavigationMenu_Fragment, ComponentReferenceFields_Page_Fragment, ComponentReferenceFields_Seo_Fragment, ComponentReferenceFields_TopicBusinessInfo_Fragment, ComponentReferenceFields_TopicPerson_Fragment, ComponentReferenceFields_TopicProduct_Fragment, ComponentReferenceFields_TopicProductFeature_Fragment } from '../../../../../lib/shared-fragments/__generated/ctf-componentMap.generated';
 import { AssetFieldsFragment } from '../../ctf-asset/__generated/ctf-asset.generated';
 import { ComponentReferenceFieldsFragmentDoc } from '../../../../../lib/shared-fragments/__generated/ctf-componentMap.generated';
 import { AssetFieldsFragmentDoc } from '../../ctf-asset/__generated/ctf-asset.generated';
 import { useQuery, UseQueryOptions } from '@tanstack/react-query';
 import { customFetcher } from '@src/lib/fetchConfig';
 export type TextBlockFieldsFragment = { __typename: 'ComponentTextBlock', headline?: string | null, subline?: string | null, colorPalette?: string | null, sys: { __typename?: 'Sys', id: string }, body?: { __typename?: 'ComponentTextBlockBody', json: any, links: { __typename?: 'ComponentTextBlockBodyLinks', entries: { __typename?: 'ComponentTextBlockBodyEntries', block: Array<(
+          { __typename?: 'CarouselVideoComponent' }
+          & ComponentReferenceFields_CarouselVideoComponent_Fragment
+        ) | (
           { __typename?: 'ComponentCta' }
           & ComponentReferenceFields_ComponentCta_Fragment
         ) | (
@@ -30,6 +33,9 @@ export type TextBlockFieldsFragment = { __typename: 'ComponentTextBlock', headli
         ) | (
           { __typename?: 'FooterMenu' }
           & ComponentReferenceFields_FooterMenu_Fragment
+        ) | (
+          { __typename?: 'HeroSlideDownBannar' }
+          & ComponentReferenceFields_HeroSlideDownBannar_Fragment
         ) | (
           { __typename?: 'MenuGroup' }
           & ComponentReferenceFields_MenuGroup_Fragment
